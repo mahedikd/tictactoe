@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+			integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="./app.js" defer></script>
+		<title>Tic-Tac-Toe</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h3>Tic-Tac-Toe</h3>
+			</header>
+			<div class="play-area row">
+				<!-- player side  -->
+				<div class="six columns player-side">
+					<i class="fa fa-user-o one column" aria-hidden="true"></i>
+					<h4 class="five columns">
+						Sign : <i id="playerSign" class="fa fa-circle-thin" aria-hidden="true"></i>
+					</h4>
+					<h4 class="four columns">Win : <span class="playerWins">0</span></h4>
+				</div>
+				<!-- computer side  -->
+				<div class="six columns computer-side">
+					<i class="fa fa-microchip one column" aria-hidden="true"></i>
+					<h4 class="five columns">
+						Sign : <i id="computerSign" class="fa fa-times" aria-hidden="true"></i>
+					</h4>
+					<h4 class="four columns">Win : <span class="computerWins">0</span></h4>
+				</div>
+			</div>
+			<div class="result-area row">
+				<h4 class="twelve columns txt"></h4>
+			</div>
+			<main>
+				<div id="grid" class="grid-container">
+					<div class="grid-element" data-id="0"></div>
+					<div class="grid-element" data-id="1"></div>
+					<div class="grid-element" data-id="2"></div>
+					<div class="grid-element" data-id="3"></div>
+					<div class="grid-element" data-id="4"></div>
+					<div class="grid-element" data-id="5"></div>
+					<div class="grid-element" data-id="6"></div>
+					<div class="grid-element" data-id="7"></div>
+					<div class="grid-element" data-id="8"></div>
+				</div>
+			</main>
+			<button class="play-again u-full-width">Play Again</button>
+		</div>
+	</body>
+</html>
